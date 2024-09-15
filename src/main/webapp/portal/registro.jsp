@@ -13,12 +13,12 @@
 </head>
 <body>
 <h2>Registro de Usuario</h2>
-<form action="${pageContext.servletContext.contextPath}/RegistrarUsuarioServlet" method="post">
+<form action="${pageContext.servletContext.contextPath}/registro" method="post">
     <label for="nombre_usuario">Nombre de Usuario:</label>
     <input type="text" id="nombre_usuario" name="nombre_usuario" required>
 
     <label for="contraseña">Contraseña:</label>
-    <input type="password" id="contraseña" name="contraseña" required>
+    <input type="password" id="contrasena" name="contrasena" required>
 
     <label for="rol">Rol:</label>
     <select id="rol" name="rol">

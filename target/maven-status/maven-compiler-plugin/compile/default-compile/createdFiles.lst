@@ -1,1 +1,10 @@
-backend/registro/Usuario.class
+com/mycompany/revistasdigitales/backend/registro/Usuario.class
+com/mycompany/revistasdigitales/backend/registro/Rol.class
+com/mycompany/revistasdigitales/backend/database/ConexionMySQL.class
+com/mycompany/revistasdigitales/backend/registro/Anunciante.class
+com/mycompany/revistasdigitales/backend/database/UsuarioDB.class
+com/mycompany/revistasdigitales/backend/registro/Administrador.class
+com/mycompany/revistasdigitales/backend/registro/Seguridad.class
+com/mycompany/revistasdigitales/backend/registro/Editor.class
+com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.class
+com/mycompany/revistasdigitales/backend/registro/Suscriptor.class

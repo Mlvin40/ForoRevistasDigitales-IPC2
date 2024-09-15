@@ -1,1 +1,10 @@
-/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/backend/registro/Usuario.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Rol.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Usuario.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Suscriptor.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java
