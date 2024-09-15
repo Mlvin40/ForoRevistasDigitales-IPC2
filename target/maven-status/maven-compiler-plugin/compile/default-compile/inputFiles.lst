@@ -7,4 +7,5 @@
 /home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java
 /home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Suscriptor.java
 /home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java
+/home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/LoginServlet.java
 /home/melvin/NetBeansProjects/RevistasDigitales/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java

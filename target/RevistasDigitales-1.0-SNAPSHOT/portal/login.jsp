@@ -4,21 +4,35 @@
     Author     : melvin
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Iniciar Sesión</title>
-    </head>
-    <body>
-        <h1>Iniciar Sesión</h1>
-        <!-- Formulario de inicio de sesión -->
-        <form action="login" method="post">
-            <label for="username">Nombre de Usuario:</label>
-            <input type="text" id="username" name="username" required><br>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required><br>
-            <input type="submit" value="Iniciar Sesión">
-        </form>
-    </body>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<h2>Iniciar Sesión</h2>
+
+<form action="${pageContext.servletContext.contextPath}/login" method="POST">
+    <label for="nombre_usuario">Nombre de usuario:</label>
+    <input type="text" name="nombre_usuario" required><br>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" name="contrasena" required><br>
+
+    <input type="submit" value="Iniciar sesión">
+</form>
+
+<p>¿No tienes cuenta? <a href="portal/registro.jsp">Regístrate aquí</a></p>
+
+<!-- Mostrar mensaje de error si existe -->
+<%
+    String errorMensaje = (String) request.getAttribute("errorMensaje");
+    if (errorMensaje != null) {
+%>
+<p style="color: red;"><%= errorMensaje %></p>
+<%
+    }
+%>
+
+</body>
 </html>

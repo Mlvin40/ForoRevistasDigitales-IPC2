@@ -1,5 +1,7 @@
 package com.mycompany.revistasdigitales.backend.database;
 
+import com.mycompany.revistasdigitales.backend.registro.Rol;
+import com.mycompany.revistasdigitales.backend.registro.Seguridad;
 import com.mycompany.revistasdigitales.backend.registro.Usuario;
 
 import java.sql.Connection;
@@ -59,5 +61,34 @@ public class UsuarioDB {
             throw new RuntimeException(e);
         }
         return false; // Devuelve false si no hay usuarios o se produjo un error
+    }
+
+    public Usuario iniciarSesion(String nombreUsuario, String contrasena) {
+        Seguridad seguridad = new Seguridad();
+        
+        String consulta = "SELECT * FROM usuarios WHERE nombre_usuario = ?";
+        try (PreparedStatement statement = connection.prepareStatement(consulta)) {
+            statement.setString(1, nombreUsuario);
+            //statement.setString(2, contrasena);
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    String nombre = resultSet.getString("nombre_usuario");
+                    String password = resultSet.getString("contraseña");
+                    String texto = resultSet.getString("perfil");
+                    String rol = resultSet.getString("rol");
+
+                    System.out.println(contrasena);
+                    System.out.println(password);
+                    // Si la contraseña coincide con el hash almacenado, devuelve un objeto Usuario
+                    if(seguridad.verificarContrasena(contrasena, password)){
+                        return new Usuario(nombre, contrasena, texto, Rol.valueOf(rol));
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        // Si no se encontró un usuario con las credenciales dadas, devuelve null
+        return null;
     }
 }

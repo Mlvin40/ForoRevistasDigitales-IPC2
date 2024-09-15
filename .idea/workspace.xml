@@ -11,15 +11,20 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaa99d3-7be7-4d5c-a38e-9affd066b841" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/portal/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/portal/registro.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/portal/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/portal/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/backend/registro/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/registro.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/registro/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -34,8 +39,8 @@
         <option value="JavaScript File" />
         <option value="Jspx File" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -244,12 +249,24 @@
       <workItem from="1726285931924" duration="4607000" />
       <workItem from="1726292671611" duration="3008000" />
       <workItem from="1726372582275" duration="8169000" />
-      <workItem from="1726382601847" duration="2004000" />
+      <workItem from="1726382601847" duration="2052000" />
+      <workItem from="1726433367589" duration="2953000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/portal/login.jsp</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
