@@ -13,18 +13,42 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/RegistrarUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Anunciante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Anunciante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Rol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Seguridad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Seguridad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Suscriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Suscriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/registro/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/usuarios/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/portal/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/portal/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/portal/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/portal/registro.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Anunciante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Editor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Rol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Suscriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/registro/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/registro.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/portal/registro.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/RegistrarUsuarioServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Administrador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Anunciante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Editor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Rol.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Seguridad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Suscriptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/registro/Usuario.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -39,8 +63,8 @@
         <option value="JavaScript File" />
         <option value="Jspx File" />
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -76,7 +100,7 @@
     &quot;Tomcat Server.index.jsp (1).executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.index.jsp (2).executor&quot;: &quot;Run&quot;,
     &quot;Tomcat Server.index.jsp.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;usuario__home&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/melvin/Escritorio/Prueba de Repo/IPC2-2024/jsp-app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -90,6 +114,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/inicio/suscriptor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/inicio/editor" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/inicio/anunciante" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/inicio/administrador" />
       <recent name="$PROJECT_DIR$/src/main/webapp/errores" />
     </key>
   </component>
@@ -251,6 +279,8 @@
       <workItem from="1726372582275" duration="8169000" />
       <workItem from="1726382601847" duration="2052000" />
       <workItem from="1726433367589" duration="2953000" />
+      <workItem from="1726450312150" duration="8077000" />
+      <workItem from="1726514376037" duration="19428000" />
     </task>
     <servers />
   </component>
@@ -262,7 +292,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/portal/login.jsp</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

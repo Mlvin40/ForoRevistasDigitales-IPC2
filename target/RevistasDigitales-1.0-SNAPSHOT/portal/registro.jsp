@@ -9,6 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+   
+    <jsp:include page="/includes/resources.jsp"/>
     <title>Registro de Usuario</title>
 </head>
 <body>

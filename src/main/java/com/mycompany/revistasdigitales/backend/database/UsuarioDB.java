@@ -1,8 +1,8 @@
 package com.mycompany.revistasdigitales.backend.database;
 
-import com.mycompany.revistasdigitales.backend.registro.Rol;
-import com.mycompany.revistasdigitales.backend.registro.Seguridad;
-import com.mycompany.revistasdigitales.backend.registro.Usuario;
+import com.mycompany.revistasdigitales.backend.usuarios.Rol;
+import com.mycompany.revistasdigitales.backend.usuarios.Seguridad;
+import com.mycompany.revistasdigitales.backend.usuarios.Usuario;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -47,7 +47,7 @@ public class UsuarioDB {
         }
     }
 
-    public boolean existeUsuario(String nombreUsuario) {
+    private boolean existeUsuario(String nombreUsuario) {
         String consulta = "SELECT COUNT(*) FROM usuarios WHERE nombre_usuario = ?";
         try (PreparedStatement statement = connection.prepareStatement(consulta)) {
             statement.setString(1, nombreUsuario);
@@ -69,19 +69,23 @@ public class UsuarioDB {
         String consulta = "SELECT * FROM usuarios WHERE nombre_usuario = ?";
         try (PreparedStatement statement = connection.prepareStatement(consulta)) {
             statement.setString(1, nombreUsuario);
-            //statement.setString(2, contrasena);
+
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
                     String nombre = resultSet.getString("nombre_usuario");
                     String password = resultSet.getString("contraseña");
                     String texto = resultSet.getString("perfil");
+                    String fotoPerfil = resultSet.getString("foto_perfil");
                     String rol = resultSet.getString("rol");
+                    //fechaCreacion es un campo de tipo DATE en la base de datos
+                    String fechaCreacion = resultSet.getString("fecha_creacion");
 
                     System.out.println(contrasena);
                     System.out.println(password);
                     // Si la contraseña coincide con el hash almacenado, devuelve un objeto Usuario
                     if(seguridad.verificarContrasena(contrasena, password)){
-                        return new Usuario(nombre, contrasena, texto, Rol.valueOf(rol));
+                        System.out.println("Contraseña correcta");
+                        return new Usuario(nombre, password, texto, fotoPerfil, Rol.valueOf(rol), fechaCreacion);
                     }
                 }
             }

@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <jsp:include page="/includes/resources.jsp"/>
     <title>Login</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
     <input type="submit" value="Iniciar sesión">
 </form>
 
-<p>¿No tienes cuenta? <a href="portal/registro.jsp">Regístrate aquí</a></p>
+<p>¿No tienes cuenta? <a href="registro.jsp">Regístrate aquí</a></p>
 
 <!-- Mostrar mensaje de error si existe -->
 <%
