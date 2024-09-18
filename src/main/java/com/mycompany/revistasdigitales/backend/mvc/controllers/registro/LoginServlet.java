@@ -48,7 +48,8 @@ public class LoginServlet extends HttpServlet {
                 response.sendRedirect("inicio/suscriptor/suscriptorHome.jsp");
                 break;
             case EDITOR:
-                response.sendRedirect("inicio/editor/editorHome.jsp");
+                //response.sendRedirect("inicio/editor/editorHome.jsp");
+                response.sendRedirect("homeEditor");
                 break;
             case ANUNCIANTE:
                 response.sendRedirect("inicio/anunciante/anuncianteHome.jsp");

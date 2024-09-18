@@ -1,5 +1,8 @@
 package com.mycompany.revistasdigitales.backend.revistas;
 
+import com.mycompany.revistasdigitales.backend.database.RevistaDB;
+import com.mycompany.revistasdigitales.backend.database.UsuarioDB;
+
 import java.time.LocalDate;
 
 public class Revista {
@@ -8,22 +11,46 @@ public class Revista {
     //la descripcion de la revista es el contenido de la revista
     private String descripcion;
     private String categoria;
-    private String contenido;
     private String fechaCreacion;
     private String autor;
+    private double costo;
     private String archivoPDF;
+    private boolean estadoComentar;
+    private boolean estadoMeGusta;
+    private boolean estadoSuscribirse;
 
 
-    public Revista(String nombre, String descripcion, String categoria, String contenido, String fechaCreacion, String autor, String archivoPDF) {
+    //Constructor para crear una revista
+    public Revista(String nombre, String descripcion, String categoria, String fechaCreacion, String autor, String archivoPDF) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.categoria = categoria;
-        this.contenido = contenido;
         this.fechaCreacion = fechaCreacion;
         this.autor = autor;
+        this.costo = establecerCosto();
         this.archivoPDF = archivoPDF;
     }
 
+    //Constructor para recuperar una revista de la base de datos
+
+
+    public Revista(String nombre, String descripcion, String categoria, String fechaCreacion, String autor, double costo, String archivoPDF, boolean estadoComentar, boolean estadoMeGusta, boolean estadoSuscribirse) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.categoria = categoria;
+        this.fechaCreacion = fechaCreacion;
+        this.autor = autor;
+        this.costo = costo;
+        this.archivoPDF = archivoPDF;
+        this.estadoComentar = estadoComentar;
+        this.estadoMeGusta = estadoMeGusta;
+        this.estadoSuscribirse = estadoSuscribirse;
+    }
+
+    private double establecerCosto(){
+        RevistaDB revistaDB = new RevistaDB();
+        return revistaDB.establecerPrecioRevista();
+    }
 
     public String getNombre() {
         return nombre;
@@ -65,19 +92,43 @@ public class Revista {
         this.autor = autor;
     }
 
-    public String getContenido() {
-        return contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
-
     public String getArchivoPDF() {
         return archivoPDF;
     }
 
     public void setArchivoPDF(String archivoPDF) {
         this.archivoPDF = archivoPDF;
+    }
+
+    public double getCosto() {
+        return costo;
+    }
+
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    public boolean isEstadoComentar() {
+        return estadoComentar;
+    }
+
+    public void setEstadoComentar(boolean estadoComentar) {
+        this.estadoComentar = estadoComentar;
+    }
+
+    public boolean isEstadoMeGusta() {
+        return estadoMeGusta;
+    }
+
+    public void setEstadoMeGusta(boolean estadoMeGusta) {
+        this.estadoMeGusta = estadoMeGusta;
+    }
+
+    public boolean isEstadoSuscribirse() {
+        return estadoSuscribirse;
+    }
+
+    public void setEstadoSuscribirse(boolean estadoSuscribirse) {
+        this.estadoSuscribirse = estadoSuscribirse;
     }
 }
