@@ -29,7 +29,8 @@ public class ActualizarRevistaServlet extends HttpServlet {
 
         EditorDB editorDB = new EditorDB();
         Revista revista = editorDB.obtenerRevistaPorNombre(nombre);
-        // Busca la revista por el nombre (u otro identificador) y actualiza sus valores
+
+        // Verificar que la revista exista
         if (revista != null) {
             revista.setDescripcion(descripcion);
             revista.setCategoria(categoria);
@@ -38,10 +39,9 @@ public class ActualizarRevistaServlet extends HttpServlet {
             revista.setEstadoSuscribirse(estadoSuscribirse);
 
             // Guardar los cambios en la base de datos
-            editorDB.actualizarRevista(revista); // Método en el DAO para actualizar la revista
+            editorDB.actualizarRevista(revista);
         }
-        // Redirigir a una página de éxito o a la lista de revistas
-        response.sendRedirect("homeEditor");  // Ajusta el servlet o página de destino
+        // Redirigir a la página de inicio del editor
+        response.sendRedirect("homeEditor");
     }
-
 }

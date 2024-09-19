@@ -18,36 +18,46 @@
     <jsp:include page="/includes/resources.jsp"/>
 </head>
 <body>
-    <jsp:include page="/includes/headerEditor.jsp"/>
+<jsp:include page="/includes/headerEditor.jsp"/>
 
-    <main>
-        <div class="container">
-            <!-- Mostrar revistas -->
-            <c:choose>
-                <c:when test="${not empty revistas}">
-                    <div class="row">
-                        <c:forEach items="${revistas}" var="revista">
-                            <div class="col-md-4 mb-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Nombre de la revista: ${revista.nombre != null ? revista.nombre : 'Sin nombre'}</h5>
-                                        <p class="card-text">Descripción: ${revista.descripcion != null ? revista.descripcion : 'Sin descripción'}</p>
-                                        <p><strong>Categoría:</strong> ${revista.categoria != null ? revista.categoria : 'Sin categoría'}</p>
-                                        <p><strong>Fecha de Creación:</strong> ${revista.fechaCreacion != null ? revista.fechaCreacion : 'Desconocida'}</p>
-                                        <p><strong>Costo:</strong> $${revista.costo}</p>
-                                        <a href="${revista.archivoPDF}" class="btn btn-primary" target="_blank">Ver PDF</a>
-                                        <a href="editarRevistaServlet?nombreRevista=${revista.nombre}" class="btn btn-warning">Editar</a>
+<main>
+    <div class="container">
+        <!-- Mostrar revistas -->
+        <c:choose>
+            <c:when test="${not empty revistas}">
+                <div class="row">
+                    <c:forEach items="${revistas}" var="revista">
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre de la revista: ${revista.nombre != null ? revista.nombre : 'Sin nombre'}</h5>
+                                    <p class="card-text">Descripción: ${revista.descripcion != null ? revista.descripcion : 'Sin descripción'}</p>
+                                    <p><strong>Categoría:</strong> ${revista.categoria != null ? revista.categoria : 'Sin categoría'}</p>
+                                    <p><strong>Fecha de Creación:</strong> ${revista.fechaCreacion != null ? revista.fechaCreacion : 'Desconocida'}</p>
+                                    <p><strong>Costo:</strong> $${revista.costo}</p>
+                                    <p><strong>Cantidad de Likes:</strong> ${revista.likes}</p> <!-- Mostrar cantidad de likes -->
+                                    <a href="${revista.archivoPDF}" class="btn btn-primary" target="_blank">Ver PDF</a>
+
+                                    <a href="editarRevistaServlet?nombreRevista=${revista.nombre}" class="btn btn-warning">Editar</a>
+
+                                    <!-- Mostrar comentarios -->
+                                    <div>
+                                        <h6>Comentarios:</h6>
+                                        <c:forEach items="${revista.comentarios}" var="comentario">
+                                            <p><strong>${comentario.nombreUsuario}:</strong> ${comentario.comentario}</p>
+                                        </c:forEach>
                                     </div>
                                 </div>
                             </div>
-                        </c:forEach>
-                    </div>
-                </c:when>
-                <c:otherwise>
-                    <p>No hay revistas disponibles.</p>
-                </c:otherwise>
-            </c:choose>
-        </div>
-    </main>
+                        </div>
+                    </c:forEach>
+                </div>
+            </c:when>
+            <c:otherwise>
+                <p>No hay revistas disponibles.</p>
+            </c:otherwise>
+        </c:choose>
+    </div>
+</main>
 </body>
 </html>

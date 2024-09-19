@@ -1,6 +1,7 @@
 package com.mycompany.revistasdigitales.backend.database;
 
 import com.mycompany.revistasdigitales.backend.revistas.Revista;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,8 +19,7 @@ public class EditorDB {
             throw new RuntimeException(e);
         }
     }
-   
-    
+
     public List<Revista> obtenerRevistasPorAutor(String idAutor) {
         List<Revista> revistas = new ArrayList<>();
         String consulta = "SELECT * FROM revistas WHERE id_autor = ?";
@@ -30,13 +30,13 @@ public class EditorDB {
 
             while (resultSet.next()) {
                 Revista revista = new Revista(
-                    resultSet.getString("nombre_revista"),
-                    resultSet.getString("descripcion"),
-                    resultSet.getString("categoria"),
-                    resultSet.getDate("fecha_creacion").toString(),
-                    resultSet.getString("id_autor"),
-                    resultSet.getDouble("costo"),
-                    resultSet.getString("url_pdf"),
+                        resultSet.getString("nombre_revista"),
+                        resultSet.getString("descripcion"),
+                        resultSet.getString("categoria"),
+                        resultSet.getDate("fecha_creacion").toString(),
+                        resultSet.getString("id_autor"),
+                        resultSet.getDouble("costo"),
+                        resultSet.getString("url_pdf"),
                         resultSet.getBoolean("estado_comentar"),
                         resultSet.getBoolean("estado_megusta"),
                         resultSet.getBoolean("estado_suscribirse")

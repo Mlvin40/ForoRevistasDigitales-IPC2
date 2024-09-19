@@ -34,7 +34,7 @@ public class UsuarioDB {
             statement.setString(2, usuario.getContrasena());
             statement.setString(3, usuario.getTexto()); // Se usa String aquí
             statement.setString(4, usuario.getRol().toString());
-            
+
             // Si la inserción fue exitosa, executeUpdate devuelve el número de filas afectadas
             int filasAfectadas = statement.executeUpdate();
 
@@ -60,16 +60,31 @@ public class UsuarioDB {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return false; // Devuelve false si no hay usuarios o se produjo un error
+        return false;
+        // Devuelve false si no hay usuarios o se produjo un error
     }
 
     public Usuario iniciarSesion(String nombreUsuario, String contrasena) {
         Seguridad seguridad = new Seguridad();
-        
+        Usuario usuarioObtenido = obtenerUsuario(nombreUsuario);
+
+        if (usuarioObtenido == null) {
+            return null;
+        }
+        // Si la contraseña coincide con el hash almacenado, devuelve un objeto Usuario
+        if (seguridad.verificarContrasena(contrasena, usuarioObtenido.getContrasena())) {
+            System.out.println("Contraseña correcta");
+            return usuarioObtenido;
+        }
+
+        // Si no se encontró un usuario con las credenciales dadas, devuelve null
+        return null;
+    }
+
+    public Usuario obtenerUsuario(String nombreUsuario) {
         String consulta = "SELECT * FROM usuarios WHERE nombre_usuario = ?";
         try (PreparedStatement statement = connection.prepareStatement(consulta)) {
             statement.setString(1, nombreUsuario);
-
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
                     String nombre = resultSet.getString("nombre_usuario");
@@ -79,20 +94,27 @@ public class UsuarioDB {
                     String rol = resultSet.getString("rol");
                     //fechaCreacion es un campo de tipo DATE en la base de datos
                     String fechaCreacion = resultSet.getString("fecha_creacion");
-
-                    System.out.println(contrasena);
-                    System.out.println(password);
-                    // Si la contraseña coincide con el hash almacenado, devuelve un objeto Usuario
-                    if(seguridad.verificarContrasena(contrasena, password)){
-                        System.out.println("Contraseña correcta");
-                        return new Usuario(nombre, password, texto, fotoPerfil, Rol.valueOf(rol), fechaCreacion);
-                    }
+                    return new Usuario(nombre, password, texto, fotoPerfil, Rol.valueOf(rol), fechaCreacion);
                 }
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        // Si no se encontró un usuario con las credenciales dadas, devuelve null
         return null;
     }
+
+    public void actualizarUsuario(String nombreUsuario, String texto, String fotoPerfilPath) {
+        String consulta = "UPDATE usuarios SET perfil = ?, foto_perfil = ? WHERE nombre_usuario = ?";
+
+        try (PreparedStatement stmt = connection.prepareStatement(consulta)) {
+            stmt.setString(1, texto);
+            stmt.setString(2, fotoPerfilPath);
+            stmt.setString(3, nombreUsuario);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }

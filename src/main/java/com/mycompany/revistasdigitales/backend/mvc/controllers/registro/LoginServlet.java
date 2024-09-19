@@ -40,12 +40,13 @@ public class LoginServlet extends HttpServlet {
     }
 
     private void redirigirInicio(HttpServletRequest request, HttpServletResponse response, Usuario usuario) throws ServletException, IOException {
-        Rol rol = usuario.getRol(); // Asumiendo que getRol devuelve un enum RolUsuario
-        System.out.println("Rol del usuario: " + rol.name()); // Para depurar, imprime el valor del enum
+        Rol rol = usuario.getRol();
+        System.out.println("Rol del usuario: " + rol.name());
 
         switch (rol) {
             case SUSCRIPTOR:
-                response.sendRedirect("inicio/suscriptor/suscriptorHome.jsp");
+                response.sendRedirect("homeSuscriptor");
+                //response.sendRedirect("inicio/suscriptor/suscriptorHome.jsp");
                 break;
             case EDITOR:
                 //response.sendRedirect("inicio/editor/editorHome.jsp");

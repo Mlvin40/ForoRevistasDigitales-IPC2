@@ -25,15 +25,8 @@ public class CarteraDB {
         }
     }
 
-    /**
-     * CREATE TABLE cartera_anunciantes (
-     * id_cartera INT AUTO_INCREMENT PRIMARY KEY,
-     * nombre_anunciante VARCHAR(50),
-     * saldo DECIMAL(10, 2) DEFAULT 0,
-     * FOREIGN KEY (nombre_anunciante) REFERENCES usuarios(nombre_usuario)
-     * );
-     * @param usuario
-     */
+
+    // Método para crear una cartera de anunciantes
     public void crearCartera(Usuario usuario) {
         
         String consulta = "INSERT INTO cartera_anunciantes (nombre_anunciante) VALUES (?)";

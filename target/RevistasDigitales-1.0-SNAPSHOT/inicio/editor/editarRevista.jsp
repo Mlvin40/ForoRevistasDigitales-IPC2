@@ -10,12 +10,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <jsp:include page="/includes/resources.jsp"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Revista</title>
-    <jsp:include page="/includes/resources.jsp"/>
+    
 </head>
 <body>
+    <jsp:include page="/includes/headerEditor.jsp"/>
+    
     <h1>Editar Revista</h1>
 
     <form action="actualizarRevistaServlet" method="POST">

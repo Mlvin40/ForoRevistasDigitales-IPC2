@@ -4,6 +4,7 @@ import com.mycompany.revistasdigitales.backend.database.RevistaDB;
 import com.mycompany.revistasdigitales.backend.database.UsuarioDB;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Revista {
 
@@ -19,12 +20,18 @@ public class Revista {
     private boolean estadoMeGusta;
     private boolean estadoSuscribirse;
 
+    //Atributos que se asignan con datos de la base de datos
+    private int likes;
+    private List<Comentario> comentarios;
+
 
     //Constructor para crear una revista
     public Revista(String nombre, String descripcion, String categoria, String fechaCreacion, String autor, String archivoPDF) {
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.categoria = categoria;
+
+        //la categoria debe de guardarse todo en minisculas
+        this.categoria = categoria.toLowerCase();
         this.fechaCreacion = fechaCreacion;
         this.autor = autor;
         this.costo = establecerCosto();
@@ -32,8 +39,6 @@ public class Revista {
     }
 
     //Constructor para recuperar una revista de la base de datos
-
-
     public Revista(String nombre, String descripcion, String categoria, String fechaCreacion, String autor, double costo, String archivoPDF, boolean estadoComentar, boolean estadoMeGusta, boolean estadoSuscribirse) {
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -130,5 +135,21 @@ public class Revista {
 
     public void setEstadoSuscribirse(boolean estadoSuscribirse) {
         this.estadoSuscribirse = estadoSuscribirse;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 }

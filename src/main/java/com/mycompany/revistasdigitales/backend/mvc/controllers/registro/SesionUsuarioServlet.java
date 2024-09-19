@@ -10,7 +10,8 @@ import java.io.IOException;
 
 @WebServlet("/cerrarSesion")
 public class SesionUsuarioServlet extends HttpServlet {
-    
+    //Clase que se encarga de cerrar la sesion del usuario
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

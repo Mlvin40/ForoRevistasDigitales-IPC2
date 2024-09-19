@@ -22,7 +22,8 @@ import java.util.Date;
 @MultipartConfig
 public class CreadorRevistaServlet extends HttpServlet {
 
-    private static final String REVISTAS_FOLDER = "revistas_folder"; // Carpeta donde se guardarán los archivos PDF
+    // Carpeta donde se guardarán los archivos PDF de las revistas
+    private static final String REVISTAS_FOLDER = "revistas_folder";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,7 +43,7 @@ public class CreadorRevistaServlet extends HttpServlet {
         RevistaDB revistaDB = new RevistaDB();
         if(revistaDB.existeRevista(nombre)){
             // Redirigir a una página de error
-            response.sendRedirect(request.getContextPath() + "/inicio/editor/errorRevistaExistente.jsp");
+            //response.sendRedirect(request.getContextPath() + "/inicio/editor/errorRevistaExistente.jsp");
             return;
         }
 
@@ -79,7 +80,7 @@ public class CreadorRevistaServlet extends HttpServlet {
 
         Revista revista = new Revista(nombre, descripcion, categoria, fechaCreacion, autor, urlPath);
         revistaDB.crearRevista(revista);
-        response.sendRedirect("editorRevistas");
+        response.sendRedirect("homeEditor");
         System.out.println("Revista creada: " + revista.getNombre());
     }
 }
