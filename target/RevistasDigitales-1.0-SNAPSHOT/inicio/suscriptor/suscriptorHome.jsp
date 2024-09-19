@@ -17,7 +17,6 @@
 </head>
 <body>
 <jsp:include page="/includes/headerSuscriptor.jsp"/>
-
 <main>
     <div class="container">
         <!-- Mostrar revistas suscritas -->
@@ -50,24 +49,29 @@
                                     </p>
 
                                     <!-- Botón para dar like -->
-
-                                    <form action="${pageContext.servletContext.contextPath}/likeRevistaServlet" method="POST" style="display:inline-block;">
-                                        <input type="hidden" name="revistaNombre" value="${revista.nombre}" />
-                                        <button type="submit" class="btn btn-success">👍 Like</button>
+                                    <form action="${pageContext.servletContext.contextPath}/likeRevistaServlet"
+                                          method="POST" style="display:inline-block;">
+                                        <input type="hidden" name="revistaNombre" value="${revista.nombre}"/>
+                                        <button type="submit" class="btn btn-success"
+                                            ${revista.estadoMeGusta ? "" : "disabled"}>
+                                            👍 Like
+                                        </button>
                                     </form>
 
                                     <!-- Ver PDF -->
                                     <a href="${revista.archivoPDF}" class="btn btn-primary" target="_blank">Ver PDF</a>
 
                                     <!-- Descargar PDF -->
-                                    <form action="${pageContext.servletContext.contextPath}/descargarPDF" method="get" style="display:inline-block;">
-                                        <input type="hidden" name="archivoPDF" value="${revista.archivoPDF}" />
+                                    <form action="${pageContext.servletContext.contextPath}/descargarPDF" method="get"
+                                          style="display:inline-block;">
+                                        <input type="hidden" name="archivoPDF" value="${revista.archivoPDF}"/>
                                         <button type="submit" class="btn btn-secondary">Descargar PDF</button>
                                     </form>
 
                                     <!-- Ver perfil del autor -->
                                     <p><strong>Autor:</strong>
-                                        <a href="${pageContext.servletContext.contextPath}/perfilAutor?autorId=${revista.autor}" class="btn btn-link">
+                                        <a href="${pageContext.servletContext.contextPath}/perfilAutor?autorId=${revista.autor}"
+                                           class="btn btn-link">
                                                 ${revista.autor}
                                         </a>
                                     </p>
@@ -76,15 +80,22 @@
                                     <div>
                                         <h6>Comentarios:</h6>
                                         <c:forEach items="${revista.comentarios}" var="comentario">
-                                            <p><strong>${comentario.nombreUsuario}:</strong> ${comentario.comentario}</p>
+                                            <p><strong>${comentario.nombreUsuario}:</strong> ${comentario.comentario}
+                                            </p>
                                         </c:forEach>
                                     </div>
 
                                     <!-- Formulario para agregar comentario -->
-                                    <form action="${pageContext.servletContext.contextPath}/comentarRevistaServlet" method="POST">
-                                        <input type="hidden" name="revistaId" value="${revista.nombre}" />
-                                        <textarea name="comentarioTexto" rows="2" class="form-control" placeholder="Escribe tu comentario"></textarea>
-                                        <button type="submit" class="btn btn-info mt-2">Comentar</button>
+                                    <form action="${pageContext.servletContext.contextPath}/comentarRevistaServlet"
+                                          method="POST">
+                                        <input type="hidden" name="revistaId" value="${revista.nombre}"/>
+                                        <textarea name="comentarioTexto" rows="2" class="form-control"
+                                                  placeholder="Escribe tu comentario"
+                                            ${revista.estadoComentar ? "" : "disabled"}></textarea>
+                                        <button type="submit" class="btn btn-info mt-2"
+                                            ${revista.estadoComentar ? "" : "disabled"}>
+                                            Comentar
+                                        </button>
                                     </form>
                                 </div>
                             </div>

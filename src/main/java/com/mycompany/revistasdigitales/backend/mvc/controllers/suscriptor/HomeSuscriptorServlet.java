@@ -49,17 +49,13 @@ public class HomeSuscriptorServlet extends HttpServlet {
 
 
         for (Revista revista : revistasSuscrito) {
-            //Verificar si los "Me gusta" están habilitados
-            if (revista.isEstadoMeGusta()) {
-                int cantidadLikes = meGustaDB.obtenerCantidadMeGustaPorRevista(revista.getNombre());
-                revista.setLikes(cantidadLikes);
-            }
+            // Obtener la cantidad de likes
+            int cantidadLikes = meGustaDB.obtenerCantidadMeGustaPorRevista(revista.getNombre());
+            revista.setLikes(cantidadLikes);
 
-            // Obtener los comentarios de la revista, si están habilitados
-            if (revista.isEstadoComentar()) {
-                List<Comentario> comentarios = comentarioDB.obtenerComentariosPorRevista(revista.getNombre());
-                revista.setComentarios(comentarios);
-            }
+            // Obtener los comentarios
+            List<Comentario> comentarios = comentarioDB.obtenerComentariosPorRevista(revista.getNombre());
+            revista.setComentarios(comentarios);
         }
 
         // Pasar la lista de revistas al JSP

@@ -99,7 +99,7 @@ public class RevistaDB {
     /**
      * CREATE TABLE precio_global_revistas( costo DECIMAL(10, 2) DEFAULT 0);
      */
-    public double establecerPrecioRevista() {
+    public double establecerPrecioRevistaGlobal() {
         String consulta = "SELECT costo FROM precio_global_revistas";
         try (PreparedStatement statement = connection.prepareStatement(consulta)) {
             try (ResultSet resultSet = statement.executeQuery()) {
@@ -113,7 +113,18 @@ public class RevistaDB {
         return 0;
     }
 
-    public boolean actualizarPrecioRevista(double precio) {
+    public void actualizarPrecioRevista(String nombreRevista, double precio) {
+        String consulta = "UPDATE revistas SET costo = ? WHERE nombre_revista = ?";
+        try (PreparedStatement statement = connection.prepareStatement(consulta)) {
+            statement.setDouble(1, precio);
+            statement.setString(2, nombreRevista);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println("Error al actualizar precio de revista: " + e.getMessage());
+        }
+    }
+
+    public boolean actualizarPrecioRevistaGlobal(double precio) {
         String consulta = "UPDATE precio_global_revistas SET costo = ?";
         try {
             PreparedStatement statement = connection.prepareStatement(consulta);

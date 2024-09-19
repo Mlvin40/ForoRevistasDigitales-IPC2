@@ -21,30 +21,13 @@ public class LikeRevistaServlet extends HttpServlet {
         String nombreRevista = request.getParameter("revistaNombre");
 
         // Obtener la sesión actual
-        //HttpSession session = request.getSession(false);
         HttpSession session = request.getSession();
         Usuario usuarioActual = (Usuario) session.getAttribute("usuario");
-
-        // Verificar que la sesión esté activa y que el usuario esté autenticado
-//        if (session == null || session.getAttribute("nombreUsuario") == null) {
-//            response.sendRedirect("login.jsp");
-//            return;
-//        }
-
-        // Obtener el nombre del usuario autenticado
-        String nombreUsuario = (String) session.getAttribute("nombreUsuario");
-
-        // Verificar que el nombre de la revista no sea nulo o vacío
-//        if (nombreRevista == null || nombreRevista.isEmpty()) {
-//            request.setAttribute("error", "Datos inválidos.");
-//            request.getRequestDispatcher("homeSuscriptor").forward(request, response);
-//            return;
-//        }
 
         // Dar like a la revista en la base de datos
         try {
             MeGustaDB meGustaDB = new MeGustaDB();
-            meGustaDB.darLike(nombreRevista, nombreUsuario); // Registrar el like
+            meGustaDB.darLike(nombreRevista, usuarioActual.getNombreUsuario()); // Registrar el like
 
             // Redirigir al home del suscriptor o mostrar un mensaje de éxito
             response.sendRedirect("homeSuscriptor");

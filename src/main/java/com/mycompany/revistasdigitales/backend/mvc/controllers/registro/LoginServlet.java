@@ -56,7 +56,7 @@ public class LoginServlet extends HttpServlet {
                 response.sendRedirect("inicio/anunciante/anuncianteHome.jsp");
                 break;
             case ADMINISTRADOR:
-                response.sendRedirect("inicio/administrador/adminHome.jsp");
+                response.sendRedirect("inicio/administrador/administradorHome.jsp");
                 break;
             default:
                 System.out.println("Rol desconocido: " + rol);

@@ -10,52 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aaa99d3-7be7-4d5c-a38e-9affd066b841" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/DescargarServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/CarteraDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/CarteraDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/EditorDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/EditorDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/RevistaDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/RevistaDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/UsuarioDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/homeEditorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/HomeEditorServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/revistas/Revista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/revistas/Revista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/headerEditor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/headerEditor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio/editor/editarRevista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/inicio/editor/editarRevista.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio/editor/editorHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/inicio/editor/editorHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio/administrador/adminHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/inicio/administrador/administradorHome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio/suscriptor/suscriptorHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/inicio/suscriptor/suscriptorHome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/EditorDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/EditorDB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/RevistaDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/RevistaDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/homeEditorServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerEditor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerEditor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/editor/editarRevista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/editor/editarRevista.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/editor/editorHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/editor/editorHome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/administrador/adminHome.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/suscriptor/suscriptorHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/inicio/suscriptor/suscriptorHome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/ConexionMySQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/EditorDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/EditorDB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/RevistaDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/RevistaDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/UsuarioDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/ActualizarRevistaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/CreadorRevistaServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/editor/homeEditorServlet.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/registro/SesionUsuarioServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/HomeSuscriptorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,13 +78,17 @@
     "JavaScript Debug.registro.jsp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.28.executor": "Run",
+    "Tomcat Server.administradorHome.jsp (1).executor": "Run",
+    "Tomcat Server.administradorHome.jsp (2).executor": "Run",
+    "Tomcat Server.administradorHome.jsp.executor": "Run",
     "Tomcat Server.configuracionUsuario.jsp.executor": "Run",
     "Tomcat Server.index.jsp (1).executor": "Run",
     "Tomcat Server.index.jsp (2).executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
+    "extract.method.default.visibility": "private",
     "git-widget-placeholder": "usuario__home",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/melvin/Escritorio/Prueba de Repo/IPC2-2024/jsp-app",
+    "last_opened_file_path": "/home/melvin/NetBeansProjects/RevistasDigitales/src/main/webapp/includes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,6 +99,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/includes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/inicio/suscriptor" />
       <recent name="$PROJECT_DIR$/src/main/webapp/inicio/editor" />
@@ -259,7 +241,7 @@
       <workItem from="1726609382470" duration="5759000" />
       <workItem from="1726626443391" duration="2981000" />
       <workItem from="1726638064333" duration="12849000" />
-      <workItem from="1726724059509" duration="23548000" />
+      <workItem from="1726724059509" duration="32498000" />
     </task>
     <servers />
   </component>
@@ -273,16 +255,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/SuscriptorDB.java</url>
           <line>87</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/ComentarRevistaServlet.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/suscriptor/LikeRevistaServlet.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,9 +1,7 @@
 package com.mycompany.revistasdigitales.backend.revistas;
 
 import com.mycompany.revistasdigitales.backend.database.RevistaDB;
-import com.mycompany.revistasdigitales.backend.database.UsuarioDB;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class Revista {
@@ -30,7 +28,7 @@ public class Revista {
         this.nombre = nombre;
         this.descripcion = descripcion;
 
-        //la categoria debe de guardarse todo en minisculas
+        //la categoria debe de guardarse todo en minisculas para facilitar la busqueda
         this.categoria = categoria.toLowerCase();
         this.fechaCreacion = fechaCreacion;
         this.autor = autor;
@@ -54,7 +52,7 @@ public class Revista {
 
     private double establecerCosto(){
         RevistaDB revistaDB = new RevistaDB();
-        return revistaDB.establecerPrecioRevista();
+        return revistaDB.establecerPrecioRevistaGlobal();
     }
 
     public String getNombre() {
