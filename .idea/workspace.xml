@@ -12,9 +12,6 @@
     <list default="true" id="1aaa99d3-7be7-4d5c-a38e-9affd066b841" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAnunciante.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAnunciante.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,34 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.index.jsp.executor": "Run",
-    "JavaScript Debug.registrar.jsp.executor": "Run",
-    "JavaScript Debug.registro.jsp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.28.executor": "Run",
-    "Tomcat Server.administradorHome.jsp (1).executor": "Run",
-    "Tomcat Server.administradorHome.jsp (2).executor": "Run",
-    "Tomcat Server.administradorHome.jsp.executor": "Run",
-    "Tomcat Server.configuracionUsuario.jsp.executor": "Run",
-    "Tomcat Server.index.jsp (1).executor": "Run",
-    "Tomcat Server.index.jsp (2).executor": "Run",
-    "Tomcat Server.index.jsp.executor": "Run",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/melvin/NetBeansProjects/RevistasDigitales/src/main/webapp/includes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.registrar.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.registro.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.28.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.administradorHome.jsp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.administradorHome.jsp (2).executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.administradorHome.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.configuracionUsuario.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.index.jsp (1).executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.index.jsp (2).executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.index.jsp.executor&quot;: &quot;Run&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/melvin/NetBeansProjects/RevistasDigitales/src/main/webapp/includes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/includes" />
@@ -198,8 +195,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -226,6 +223,8 @@
       <workItem from="1726626443391" duration="2981000" />
       <workItem from="1726638064333" duration="12849000" />
       <workItem from="1726724059509" duration="42418000" />
+      <workItem from="1726774133003" duration="188000" />
+      <workItem from="1726774391525" duration="1272000" />
     </task>
     <servers />
   </component>
