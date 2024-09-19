@@ -9,10 +9,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <jsp:include page="/includes/resources.jsp"/>
     <title>Anunciante</title>
 </head>
 <body>
-
+<jsp:include page="/includes/headerAnunciante.jsp"/>
 <h2>Bienvenido Anunciante</h2>
 
 </body>

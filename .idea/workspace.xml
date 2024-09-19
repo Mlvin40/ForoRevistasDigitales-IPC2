@@ -11,9 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaa99d3-7be7-4d5c-a38e-9affd066b841" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/CarteraDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/CarteraDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/reportes/RevistasPopulares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/reportes/RevistasPopulares.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/revistas/Revista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/revistas/Revista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/headerAdministrador.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/headerAdministrador.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/includes/headerAnunciante.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/includes/headerAnunciante.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/inicio/anunciante/anuncianteHome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/inicio/anunciante/anuncianteHome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAdministrador.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAdministrador.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/database/CarteraDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/revistas/Revista.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +233,7 @@
       <workItem from="1726609382470" duration="5759000" />
       <workItem from="1726626443391" duration="2981000" />
       <workItem from="1726638064333" duration="12849000" />
-      <workItem from="1726724059509" duration="36426000" />
+      <workItem from="1726724059509" duration="40306000" />
     </task>
     <servers />
   </component>
@@ -238,6 +247,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/database/SuscriptorDB.java</url>
           <line>87</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

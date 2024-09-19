@@ -12,8 +12,8 @@
     </a>
 
     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="${pageContext.servletContext.contextPath}/#" class="nav-link" aria-current="page">Inicio</a></li>
-        <li><a href="${pageContext.servletContext.contextPath}/#" class="nav-link" aria-current="page">Crear Revista</a></li>
+        <li><a href="${pageContext.servletContext.contextPath}/inicio/anunciante/anuncianteHome.jsp" class="nav-link" aria-current="page">Inicio</a></li>
+        <li><a href="${pageContext.servletContext.contextPath}/cartera" class="nav-link" aria-current="page">Recargar Cartera</a></li>
         <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
 
     </ul>

@@ -15,7 +15,8 @@
         <li><a href="${pageContext.servletContext.contextPath}/inicio/administrador/administradorHome.jsp" class="nav-link" aria-current="page">Inicio</a></li>
         <li><a href="${pageContext.servletContext.contextPath}/costoGlobalRevista" class="nav-link" aria-current="page">Costo Global Revista</a></li>
         <li><a href="${pageContext.servletContext.contextPath}/listaRevistas" class="nav-link" aria-current="page">Costo Revista</a></li>
-        <li><a href="${pageContext.servletContext.contextPath}/reportePopularidad" class="nav-link" aria-current="page">Revistas Populares</a></li>
+        <li><a href="${pageContext.servletContext.contextPath}/reportePopularidad" class="nav-link" aria-current="page">Revistas Mas Populares</a></li>
+        <li><a href="${pageContext.servletContext.contextPath}/revistasMasComentadas" class="nav-link" aria-current="page">Revistas Mas Comentadas</a></li>
         <li><a href="#" class="nav-link px-2 link-body-emphasis">Customers</a></li>
 
 

@@ -18,10 +18,15 @@ public class Revista {
     private boolean estadoMeGusta;
     private boolean estadoSuscribirse;
 
+
     //Atributos que se asignan con datos de la base de datos
     private int likes;
     private List<Comentario> comentarios;
 
+
+    public int getNumeroComentarios() {
+        return comentarios.size();
+    }
 
     //Constructor para crear una revista
     public Revista(String nombre, String descripcion, String categoria, String fechaCreacion, String autor, String archivoPDF) {
