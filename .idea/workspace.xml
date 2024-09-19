@@ -11,6 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1aaa99d3-7be7-4d5c-a38e-9affd066b841" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/WEB-INF/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAnunciante.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/RevistasDigitales-1.0-SNAPSHOT/includes/headerAnunciante.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/revistasdigitales/backend/mvc/controllers/anunciante/CarteraServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
     "Tomcat Server.index.jsp (2).executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
     "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "usuario__home",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/melvin/NetBeansProjects/RevistasDigitales/src/main/webapp/includes",
     "node.js.detected.package.eslint": "true",
